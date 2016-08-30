@@ -1,2 +1,1 @@
-# SWE30010DP2KTDProjectRepository
-SWE30010DP2KTD Project Repository
+# This is the group project repository for the Pharmacy Application.
