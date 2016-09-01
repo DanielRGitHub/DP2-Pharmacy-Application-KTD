@@ -1,0 +1,9 @@
+D:\Software Practice\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe.config
+D:\Software Practice\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe
+D:\Software Practice\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.pdb
+D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csprojResolveAssemblyReference.cache
+D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.Properties.Resources.resources
+D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csproj.GenerateResource.Cache
+D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.exe
+D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
+D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.MainForm.resources
