@@ -1,1 +1,2 @@
 D:\Software Practice\PharmacySale\PharmacyProject\bin\Debug\PharmacyProject.exe.config
+C:\Users\TUAN\Desktop\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\bin\Debug\PharmacyProject.exe.config
