@@ -8,7 +8,6 @@ D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.ex
 D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
 D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.MainForm.resources
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe.config
 C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.exe
 C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
@@ -17,13 +16,12 @@ C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\Pharm
 C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.exe
 C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
 >>>>>>> refs/remotes/origin/master
-=======
-C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe.config
-C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.exe
-C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
-=======
-C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe.config
-C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.exe
-C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
 >>>>>>> refs/remotes/origin/09-D1-K
->>>>>>> refs/remotes/origin/master
+C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe
+C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.pdb
+C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\bin\Release\MySql.Data.dll
+C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\bin\Release\MySql.Data.xml
+C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csprojResolveAssemblyReference.cache
+C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.MainForm.resources
+C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.Properties.Resources.resources
+C:\Users\kusha.LAPTOP-GNS0PQVP\Desktop\SWE30010DP2KTDProjectRepository\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csproj.GenerateResource.Cache
