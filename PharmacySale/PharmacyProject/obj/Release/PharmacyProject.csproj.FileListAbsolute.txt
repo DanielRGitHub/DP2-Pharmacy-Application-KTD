@@ -7,3 +7,6 @@ D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.cs
 D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.exe
 D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
 D:\Software Practice\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.MainForm.resources
+C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe.config
+C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.exe
+C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
