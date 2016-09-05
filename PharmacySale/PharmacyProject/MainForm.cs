@@ -112,6 +112,30 @@ namespace PharmacyProject
         {
 
         }
+
+        private void Product_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
+            string Query = "  "; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
+
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            MySqlDataReader myReader;
+
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+                MessageBox.Show("SUCCESSFULLY CHANGED");
+                while (myReader.Read())
+                {
+                    string sProduct = myReader.GetString(/*INSERT APPROPRIATE FIELD NAME HERE*/);
+                    Product_combo.Items.Add(/*INSERT APPROPRIATE FIELD NAME HERE*/);
+                }
+            }
+            catch (Exception error)
+            { MessageBox.Show(error.Message); }
+        }
     }
 
     private void label4_Click(object sender, EventArgs e)
