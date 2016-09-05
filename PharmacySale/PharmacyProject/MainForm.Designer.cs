@@ -40,6 +40,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.View_txt = new System.Windows.Forms.Button();
             this.Manufacturer_txt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Product_combo = new System.Windows.Forms.ComboBox();
@@ -52,7 +53,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.View_txt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -207,6 +207,16 @@
             this.panel1.Size = new System.Drawing.Size(460, 307);
             this.panel1.TabIndex = 1;
             // 
+            // View_txt
+            // 
+            this.View_txt.Location = new System.Drawing.Point(241, 237);
+            this.View_txt.Name = "View_txt";
+            this.View_txt.Size = new System.Drawing.Size(75, 23);
+            this.View_txt.TabIndex = 17;
+            this.View_txt.Text = "View Entries";
+            this.View_txt.UseVisualStyleBackColor = true;
+            this.View_txt.Click += new System.EventHandler(this.View_txt_Click);
+            // 
             // Manufacturer_txt
             // 
             this.Manufacturer_txt.Location = new System.Drawing.Point(162, 66);
@@ -231,6 +241,7 @@
             this.Product_combo.Name = "Product_combo";
             this.Product_combo.Size = new System.Drawing.Size(120, 21);
             this.Product_combo.TabIndex = 14;
+            this.Product_combo.SelectedIndexChanged += new System.EventHandler(this.Product_combo_SelectedIndexChanged);
             // 
             // Submit_btn
             // 
@@ -313,16 +324,6 @@
             this.label1.Size = new System.Drawing.Size(112, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Sales";
-            // 
-            // View_txt
-            // 
-            this.View_txt.Location = new System.Drawing.Point(241, 237);
-            this.View_txt.Name = "View_txt";
-            this.View_txt.Size = new System.Drawing.Size(75, 23);
-            this.View_txt.TabIndex = 17;
-            this.View_txt.Text = "View Entries";
-            this.View_txt.UseVisualStyleBackColor = true;
-            this.View_txt.Click += new System.EventHandler(this.View_txt_Click);
             // 
             // MainForm
             // 
