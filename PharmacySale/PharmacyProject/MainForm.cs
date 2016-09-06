@@ -16,6 +16,30 @@ namespace PharmacyProject
         public MainForm()
         {
             InitializeComponent();
+            FillCombo();
+        }
+
+        void FillCombo()
+        {
+            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
+            string Query = " SELECT * FROM pharmacy_db.Manufacturer "; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
+
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            MySqlDataReader myReader;
+
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+                while (myReader.Read())
+                {
+                    string sManufacturer = myReader.GetString("manufacturer_name");
+                    Manufacturer_Combo.Items.Add(sManufacturer);
+                }
+            }
+            catch (Exception error)
+            { MessageBox.Show(error.Message); }
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -40,72 +64,47 @@ namespace PharmacyProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
-            string Query = "  "; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
-
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
-
-            try
-            {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-                MessageBox.Show("SUCCESSFULLY CHANGED");
-                while (myReader.Read())
-
-                { }
-            }
-            catch (Exception error)
-            { MessageBox.Show(error.Message); }
-        }
-
-        private void Manufacturer_txt_TextChanged(object sender, EventArgs e)
-        {
-
-            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
-            string Query = "  "; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
-
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
-
-            try
-            {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-                MessageBox.Show("SUCCESSFULLY CHANGED");
-                while (myReader.Read())
-                {
-                    string sManufacturer = myReader.GetString(/*INSERT APPROPRIATE FIELD NAME HERE*/);
-                    Manufacturer_txt.Items.Add(/*INSERT APPROPRIATE FIELD NAME HERE*/);
-                }
-            }
-            catch (Exception error)
-            { MessageBox.Show(error.Message); }
+            //string constring = "datasource=localhost;port=3306;username=root;password=sample1";
+            //string Query = "  "; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
+            //
+            //MySqlConnection conDataBase = new MySqlConnection(constring);
+            //MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            //MySqlDataReader myReader;
+            //
+            //try
+            //{
+            //    conDataBase.Open();
+            //    myReader = cmdDataBase.ExecuteReader();
+            //    MessageBox.Show("SUCCESSFULLY CHANGED");
+            //    while (myReader.Read())
+            //
+            //    { }
+            //}
+            //catch (Exception error)
+            //{ MessageBox.Show(error.Message); }
         }
 
         private void View_txt_Click(object sender, EventArgs e)
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
-            MySqlConnection conDatabase = new MySqlConnection(constring);
-            MySqlCommand cmdDatabase = new MySqlCommand(/*INSERT APPROPRIATE DATABASE INFORMATION*/, conDatabase);
-
-            try
-            {
-                MySqlDataAdapter sda = new MySqlDataAdapter();
-                sda.SelectCommand = cmdDatabase;
-                DataTable dbdataset = new DataTable();
-                sda.Fill(dbdataset);
-                BindingSource bSource = new BindingSource();
-                bSource.DataSource = dbdataset;
-                dataGridView1.DataSource = bSource;
-                sda.Update(dbdataset);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //string constring = "datasource=localhost;port=3306;username=root;password=sample1";
+            //MySqlConnection conDatabase = new MySqlConnection(constring);
+            //MySqlCommand cmdDatabase = new MySqlCommand(/*INSERT APPROPRIATE DATABASE INFORMATION*/, conDatabase);
+            //
+            //try
+            //{
+            //    MySqlDataAdapter sda = new MySqlDataAdapter();
+            //    sda.SelectCommand = cmdDatabase;
+            //    DataTable dbdataset = new DataTable();
+            //    sda.Fill(dbdataset);
+            //    BindingSource bSource = new BindingSource();
+            //    bSource.DataSource = dbdataset;
+            //    dataGridView1.DataSource = bSource;
+            //    sda.Update(dbdataset);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -115,32 +114,55 @@ namespace PharmacyProject
 
         private void Product_combo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
-            string Query = "  "; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
-
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
-
-            try
-            {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-                MessageBox.Show("SUCCESSFULLY CHANGED");
-                while (myReader.Read())
-                {
-                    string sProduct = myReader.GetString(/*INSERT APPROPRIATE FIELD NAME HERE*/);
-                    Product_combo.Items.Add(/*INSERT APPROPRIATE FIELD NAME HERE*/);
-                }
-            }
-            catch (Exception error)
-            { MessageBox.Show(error.Message); }
+           //string constring = "datasource=localhost;port=3306;username=root;password=sample1";
+           //string Query = "  "; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
+           //
+           //MySqlConnection conDataBase = new MySqlConnection(constring);
+           //MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+           //MySqlDataReader myReader;
+           //
+           //try
+           //{
+           //    conDataBase.Open();
+           //    myReader = cmdDataBase.ExecuteReader();
+           //    MessageBox.Show("SUCCESSFULLY CHANGED");
+           //    while (myReader.Read())
+           //    {
+           //        string sProduct = myReader.GetString(/*INSERT APPROPRIATE FIELD NAME HERE*/);
+           //        Product_combo.Items.Add(/*INSERT APPROPRIATE FIELD NAME HERE*/);
+           //    }
+           //}
+           //catch (Exception error)
+           //{ MessageBox.Show(error.Message); }
         }
-    }
 
-    private void label4_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Manufacturer_Combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           // string constring = "datasource=localhost;port=3306;username=root;password=sample1";
+           // string Query = " SELECT * FROM pharmacy_db.Manufacturer WHERE manufacturer_name='" + Manufacturer_Combo.Text + '";
+           //     /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
+           //
+           // MySqlConnection conDataBase = new MySqlConnection(constring);
+           // MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+           // MySqlDataReader myReader;
+           //
+           // try
+           // {
+           //     conDataBase.Open();
+           //     myReader = cmdDataBase.ExecuteReader();
+           //     MessageBox.Show("SUCCESSFULLY CHANGED");
+           //     while (myReader.Read())
+           //     {
+           //         string sProduct = myReader.GetString("manufacturer_name");
+           //     }
+           // }
+           // catch (Exception error)
+           // { MessageBox.Show(error.Message); }
         }
     }
 }
