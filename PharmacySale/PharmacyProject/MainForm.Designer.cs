@@ -287,7 +287,7 @@
             // 
             // Quantity_num
             // 
-            this.Quantity_num.Location = new System.Drawing.Point(369, 143);
+            this.Quantity_num.Location = new System.Drawing.Point(369, 104);
             this.Quantity_num.Name = "Quantity_num";
             this.Quantity_num.Size = new System.Drawing.Size(41, 20);
             this.Quantity_num.TabIndex = 4;
@@ -300,7 +300,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(317, 146);
+            this.label3.Location = new System.Drawing.Point(317, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 3;
