@@ -1,6 +1,6 @@
 ﻿namespace PharmacyProject
 {
-    partial class MainForm
+    partial class search
     {
         /// <summary>
         /// Required designer variable.
@@ -40,22 +40,12 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.sales_id_update = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.PID_txt = new System.Windows.Forms.TextBox();
-            this.Calc_btn = new System.Windows.Forms.Button();
-            this.year_txt = new System.Windows.Forms.TextBox();
-            this.month_txt = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.View_txt = new System.Windows.Forms.Button();
             this.Product_combo = new System.Windows.Forms.ComboBox();
-            this.Submit_btn = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.Total_txt = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Price_txt = new System.Windows.Forms.TextBox();
-            this.Quantity_num = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -64,7 +54,6 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Quantity_num)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -190,40 +179,47 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 4;
-            this.dataGridView1.Size = new System.Drawing.Size(457, 130);
+            this.dataGridView1.Size = new System.Drawing.Size(457, 246);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.sales_id_update);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.PID_txt);
-            this.panel1.Controls.Add(this.Calc_btn);
-            this.panel1.Controls.Add(this.year_txt);
-            this.panel1.Controls.Add(this.month_txt);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.View_txt);
             this.panel1.Controls.Add(this.Product_combo);
-            this.panel1.Controls.Add(this.Submit_btn);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.Total_txt);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.Price_txt);
-            this.panel1.Controls.Add(this.Quantity_num);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(6, 139);
+            this.panel1.Location = new System.Drawing.Point(3, 255);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(460, 307);
+            this.panel1.Size = new System.Drawing.Size(460, 191);
             this.panel1.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(272, 97);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(47, 13);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Sales ID";
+            // 
+            // sales_id_update
+            // 
+            this.sales_id_update.Location = new System.Drawing.Point(275, 113);
+            this.sales_id_update.Name = "sales_id_update";
+            this.sales_id_update.Size = new System.Drawing.Size(100, 20);
+            this.sales_id_update.TabIndex = 27;
+            this.sales_id_update.TextChanged += new System.EventHandler(this.sales_id_update_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(272, 45);
+            this.label10.Location = new System.Drawing.Point(272, 50);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 13);
             this.label10.TabIndex = 26;
@@ -232,59 +228,15 @@
             // 
             // PID_txt
             // 
-            this.PID_txt.Location = new System.Drawing.Point(275, 64);
+            this.PID_txt.Location = new System.Drawing.Point(275, 66);
             this.PID_txt.Name = "PID_txt";
             this.PID_txt.Size = new System.Drawing.Size(69, 20);
             this.PID_txt.TabIndex = 25;
-            // 
-            // Calc_btn
-            // 
-            this.Calc_btn.Location = new System.Drawing.Point(22, 155);
-            this.Calc_btn.Name = "Calc_btn";
-            this.Calc_btn.Size = new System.Drawing.Size(182, 23);
-            this.Calc_btn.TabIndex = 24;
-            this.Calc_btn.Text = "Calculate Total";
-            this.Calc_btn.UseVisualStyleBackColor = true;
-            this.Calc_btn.Click += new System.EventHandler(this.Calc_btn_Click);
-            // 
-            // year_txt
-            // 
-            this.year_txt.Location = new System.Drawing.Point(274, 208);
-            this.year_txt.Name = "year_txt";
-            this.year_txt.Size = new System.Drawing.Size(100, 20);
-            this.year_txt.TabIndex = 21;
-            this.year_txt.TextChanged += new System.EventHandler(this.year_txt_TextChanged);
-            // 
-            // month_txt
-            // 
-            this.month_txt.Location = new System.Drawing.Point(275, 158);
-            this.month_txt.Name = "month_txt";
-            this.month_txt.Size = new System.Drawing.Size(100, 20);
-            this.month_txt.TabIndex = 20;
-            this.month_txt.TextChanged += new System.EventHandler(this.month_txt_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(272, 192);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Year";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(272, 142);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Month";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.PID_txt.TextChanged += new System.EventHandler(this.PID_txt_TextChanged);
             // 
             // View_txt
             // 
-            this.View_txt.Location = new System.Drawing.Point(239, 259);
+            this.View_txt.Location = new System.Drawing.Point(180, 146);
             this.View_txt.Name = "View_txt";
             this.View_txt.Size = new System.Drawing.Size(91, 23);
             this.View_txt.TabIndex = 17;
@@ -295,80 +247,16 @@
             // Product_combo
             // 
             this.Product_combo.FormattingEnabled = true;
-            this.Product_combo.Location = new System.Drawing.Point(22, 63);
+            this.Product_combo.Location = new System.Drawing.Point(20, 66);
             this.Product_combo.Name = "Product_combo";
             this.Product_combo.Size = new System.Drawing.Size(237, 21);
             this.Product_combo.TabIndex = 14;
             this.Product_combo.SelectedIndexChanged += new System.EventHandler(this.Product_combo_SelectedIndexChanged);
             // 
-            // Submit_btn
-            // 
-            this.Submit_btn.Location = new System.Drawing.Point(128, 259);
-            this.Submit_btn.Name = "Submit_btn";
-            this.Submit_btn.Size = new System.Drawing.Size(89, 23);
-            this.Submit_btn.TabIndex = 13;
-            this.Submit_btn.Text = "Submit";
-            this.Submit_btn.UseVisualStyleBackColor = true;
-            this.Submit_btn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 192);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Gross Total ($)";
-            // 
-            // Total_txt
-            // 
-            this.Total_txt.Location = new System.Drawing.Point(22, 208);
-            this.Total_txt.Name = "Total_txt";
-            this.Total_txt.Size = new System.Drawing.Size(124, 20);
-            this.Total_txt.TabIndex = 11;
-            this.Total_txt.TextChanged += new System.EventHandler(this.Total_txt_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 97);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Unit Price ($)";
-            // 
-            // Price_txt
-            // 
-            this.Price_txt.Location = new System.Drawing.Point(22, 117);
-            this.Price_txt.Name = "Price_txt";
-            this.Price_txt.Size = new System.Drawing.Size(124, 20);
-            this.Price_txt.TabIndex = 7;
-            // 
-            // Quantity_num
-            // 
-            this.Quantity_num.Location = new System.Drawing.Point(159, 117);
-            this.Quantity_num.Name = "Quantity_num";
-            this.Quantity_num.Size = new System.Drawing.Size(41, 20);
-            this.Quantity_num.TabIndex = 4;
-            this.Quantity_num.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(156, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Quantity";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 45);
+            this.label2.Location = new System.Drawing.Point(19, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -380,18 +268,19 @@
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(16, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 24);
+            this.label1.Size = new System.Drawing.Size(142, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Sales";
+            this.label1.Text = "Search Sales";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // MainForm
+            // search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 666);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel2);
-            this.Name = "MainForm";
+            this.Name = "search";
             this.Text = "Form1";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -401,7 +290,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Quantity_num)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -414,26 +302,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown Quantity_num;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox Price_txt;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox Total_txt;
-        private System.Windows.Forms.Button Submit_btn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.ComboBox Product_combo;
         private System.Windows.Forms.Button View_txt;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox year_txt;
-        private System.Windows.Forms.TextBox month_txt;
-        private System.Windows.Forms.Button Calc_btn;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox PID_txt;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox sales_id_update;
     }
 }
-

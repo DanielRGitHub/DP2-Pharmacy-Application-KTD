@@ -1,6 +1,6 @@
 ﻿namespace PharmacyProject
 {
-    partial class MainForm
+    partial class edit
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,8 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.sales_id_update = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.PID_txt = new System.Windows.Forms.TextBox();
             this.Calc_btn = new System.Windows.Forms.Button();
@@ -190,13 +192,15 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 4;
-            this.dataGridView1.Size = new System.Drawing.Size(457, 130);
+            this.dataGridView1.Size = new System.Drawing.Size(457, 98);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.sales_id_update);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.PID_txt);
             this.panel1.Controls.Add(this.Calc_btn);
@@ -215,15 +219,31 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(6, 139);
+            this.panel1.Location = new System.Drawing.Point(6, 113);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(460, 307);
+            this.panel1.Size = new System.Drawing.Size(460, 333);
             this.panel1.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(137, 38);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(172, 13);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Type in the Sales ID to be updated";
+            // 
+            // sales_id_update
+            // 
+            this.sales_id_update.Location = new System.Drawing.Point(175, 54);
+            this.sales_id_update.Name = "sales_id_update";
+            this.sales_id_update.Size = new System.Drawing.Size(100, 20);
+            this.sales_id_update.TabIndex = 27;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(272, 45);
+            this.label10.Location = new System.Drawing.Point(272, 101);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 13);
             this.label10.TabIndex = 26;
@@ -232,14 +252,14 @@
             // 
             // PID_txt
             // 
-            this.PID_txt.Location = new System.Drawing.Point(275, 64);
+            this.PID_txt.Location = new System.Drawing.Point(275, 117);
             this.PID_txt.Name = "PID_txt";
             this.PID_txt.Size = new System.Drawing.Size(69, 20);
             this.PID_txt.TabIndex = 25;
             // 
             // Calc_btn
             // 
-            this.Calc_btn.Location = new System.Drawing.Point(22, 155);
+            this.Calc_btn.Location = new System.Drawing.Point(22, 195);
             this.Calc_btn.Name = "Calc_btn";
             this.Calc_btn.Size = new System.Drawing.Size(182, 23);
             this.Calc_btn.TabIndex = 24;
@@ -249,24 +269,22 @@
             // 
             // year_txt
             // 
-            this.year_txt.Location = new System.Drawing.Point(274, 208);
+            this.year_txt.Location = new System.Drawing.Point(275, 248);
             this.year_txt.Name = "year_txt";
             this.year_txt.Size = new System.Drawing.Size(100, 20);
             this.year_txt.TabIndex = 21;
-            this.year_txt.TextChanged += new System.EventHandler(this.year_txt_TextChanged);
             // 
             // month_txt
             // 
-            this.month_txt.Location = new System.Drawing.Point(275, 158);
+            this.month_txt.Location = new System.Drawing.Point(275, 198);
             this.month_txt.Name = "month_txt";
             this.month_txt.Size = new System.Drawing.Size(100, 20);
             this.month_txt.TabIndex = 20;
-            this.month_txt.TextChanged += new System.EventHandler(this.month_txt_TextChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(272, 192);
+            this.label9.Location = new System.Drawing.Point(272, 232);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 13);
             this.label9.TabIndex = 19;
@@ -275,7 +293,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(272, 142);
+            this.label6.Location = new System.Drawing.Point(272, 179);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 18;
@@ -284,7 +302,7 @@
             // 
             // View_txt
             // 
-            this.View_txt.Location = new System.Drawing.Point(239, 259);
+            this.View_txt.Location = new System.Drawing.Point(239, 293);
             this.View_txt.Name = "View_txt";
             this.View_txt.Size = new System.Drawing.Size(91, 23);
             this.View_txt.TabIndex = 17;
@@ -295,7 +313,7 @@
             // Product_combo
             // 
             this.Product_combo.FormattingEnabled = true;
-            this.Product_combo.Location = new System.Drawing.Point(22, 63);
+            this.Product_combo.Location = new System.Drawing.Point(22, 117);
             this.Product_combo.Name = "Product_combo";
             this.Product_combo.Size = new System.Drawing.Size(237, 21);
             this.Product_combo.TabIndex = 14;
@@ -303,18 +321,18 @@
             // 
             // Submit_btn
             // 
-            this.Submit_btn.Location = new System.Drawing.Point(128, 259);
+            this.Submit_btn.Location = new System.Drawing.Point(128, 293);
             this.Submit_btn.Name = "Submit_btn";
             this.Submit_btn.Size = new System.Drawing.Size(89, 23);
             this.Submit_btn.TabIndex = 13;
-            this.Submit_btn.Text = "Submit";
+            this.Submit_btn.Text = "Update";
             this.Submit_btn.UseVisualStyleBackColor = true;
             this.Submit_btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 192);
+            this.label7.Location = new System.Drawing.Point(19, 232);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 13);
             this.label7.TabIndex = 12;
@@ -322,7 +340,7 @@
             // 
             // Total_txt
             // 
-            this.Total_txt.Location = new System.Drawing.Point(22, 208);
+            this.Total_txt.Location = new System.Drawing.Point(22, 248);
             this.Total_txt.Name = "Total_txt";
             this.Total_txt.Size = new System.Drawing.Size(124, 20);
             this.Total_txt.TabIndex = 11;
@@ -331,7 +349,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 97);
+            this.label5.Location = new System.Drawing.Point(17, 154);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 8;
@@ -339,14 +357,14 @@
             // 
             // Price_txt
             // 
-            this.Price_txt.Location = new System.Drawing.Point(22, 117);
+            this.Price_txt.Location = new System.Drawing.Point(22, 169);
             this.Price_txt.Name = "Price_txt";
             this.Price_txt.Size = new System.Drawing.Size(124, 20);
             this.Price_txt.TabIndex = 7;
             // 
             // Quantity_num
             // 
-            this.Quantity_num.Location = new System.Drawing.Point(159, 117);
+            this.Quantity_num.Location = new System.Drawing.Point(159, 169);
             this.Quantity_num.Name = "Quantity_num";
             this.Quantity_num.Size = new System.Drawing.Size(41, 20);
             this.Quantity_num.TabIndex = 4;
@@ -359,7 +377,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(156, 97);
+            this.label3.Location = new System.Drawing.Point(158, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 3;
@@ -368,7 +386,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 45);
+            this.label2.Location = new System.Drawing.Point(19, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -380,18 +398,19 @@
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(16, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 24);
+            this.label1.Size = new System.Drawing.Size(110, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Sales";
+            this.label1.Text = "Edit Sales";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // MainForm
+            // edit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 666);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel2);
-            this.Name = "MainForm";
+            this.Name = "edit";
             this.Text = "Form1";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -434,6 +453,7 @@
         private System.Windows.Forms.Button Calc_btn;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox PID_txt;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox sales_id_update;
     }
 }
-
