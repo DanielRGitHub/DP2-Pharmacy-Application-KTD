@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,8 +40,9 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.View_txt = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.Product_combo = new System.Windows.Forms.ComboBox();
             this.Submit_btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,11 +53,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Month_Combo = new System.Windows.Forms.ComboBox();
-            this.Year_Combo = new System.Windows.Forms.ComboBox();
-            this.Manufacturer_Combo = new System.Windows.Forms.ComboBox();
+            this.month_txt = new System.Windows.Forms.TextBox();
+            this.year_txt = new System.Windows.Forms.TextBox();
+            this.sales_id = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Calc_btn = new System.Windows.Forms.Button();
+            this.PID_txt = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -64,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Quantity_num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_id)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -159,33 +163,34 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(6, 3);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersWidth = 4;
             this.dataGridView1.Size = new System.Drawing.Size(457, 130);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -193,13 +198,16 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.Manufacturer_Combo);
-            this.panel1.Controls.Add(this.Year_Combo);
-            this.panel1.Controls.Add(this.Month_Combo);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.PID_txt);
+            this.panel1.Controls.Add(this.Calc_btn);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.sales_id);
+            this.panel1.Controls.Add(this.year_txt);
+            this.panel1.Controls.Add(this.month_txt);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.View_txt);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.Product_combo);
             this.panel1.Controls.Add(this.Submit_btn);
             this.panel1.Controls.Add(this.label7);
@@ -215,39 +223,49 @@
             this.panel1.Size = new System.Drawing.Size(460, 307);
             this.panel1.TabIndex = 1;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(272, 192);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Year";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(272, 142);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Month";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // View_txt
             // 
-            this.View_txt.Location = new System.Drawing.Point(241, 237);
+            this.View_txt.Location = new System.Drawing.Point(239, 259);
             this.View_txt.Name = "View_txt";
-            this.View_txt.Size = new System.Drawing.Size(75, 23);
+            this.View_txt.Size = new System.Drawing.Size(91, 23);
             this.View_txt.TabIndex = 17;
             this.View_txt.Text = "View Entries";
             this.View_txt.UseVisualStyleBackColor = true;
             this.View_txt.Click += new System.EventHandler(this.View_txt_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Manufacturer";
-            // 
             // Product_combo
             // 
             this.Product_combo.FormattingEnabled = true;
-            this.Product_combo.Location = new System.Drawing.Point(103, 104);
+            this.Product_combo.Location = new System.Drawing.Point(22, 63);
             this.Product_combo.Name = "Product_combo";
-            this.Product_combo.Size = new System.Drawing.Size(120, 21);
+            this.Product_combo.Size = new System.Drawing.Size(237, 21);
             this.Product_combo.TabIndex = 14;
             this.Product_combo.SelectedIndexChanged += new System.EventHandler(this.Product_combo_SelectedIndexChanged);
             // 
             // Submit_btn
             // 
-            this.Submit_btn.Location = new System.Drawing.Point(128, 237);
+            this.Submit_btn.Location = new System.Drawing.Point(128, 259);
             this.Submit_btn.Name = "Submit_btn";
-            this.Submit_btn.Size = new System.Drawing.Size(75, 23);
+            this.Submit_btn.Size = new System.Drawing.Size(89, 23);
             this.Submit_btn.TabIndex = 13;
             this.Submit_btn.Text = "Submit";
             this.Submit_btn.UseVisualStyleBackColor = true;
@@ -256,38 +274,39 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(27, 185);
+            this.label7.Location = new System.Drawing.Point(19, 192);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 13);
+            this.label7.Size = new System.Drawing.Size(76, 13);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Gross total";
+            this.label7.Text = "Gross Total ($)";
             // 
             // Total_txt
             // 
-            this.Total_txt.Location = new System.Drawing.Point(103, 182);
+            this.Total_txt.Location = new System.Drawing.Point(22, 208);
             this.Total_txt.Name = "Total_txt";
-            this.Total_txt.Size = new System.Drawing.Size(100, 20);
+            this.Total_txt.Size = new System.Drawing.Size(124, 20);
             this.Total_txt.TabIndex = 11;
+            this.Total_txt.TextChanged += new System.EventHandler(this.Total_txt_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 146);
+            this.label5.Location = new System.Drawing.Point(19, 97);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Unit Price";
+            this.label5.Text = "Unit Price ($)";
             // 
             // Price_txt
             // 
-            this.Price_txt.Location = new System.Drawing.Point(103, 143);
+            this.Price_txt.Location = new System.Drawing.Point(22, 117);
             this.Price_txt.Name = "Price_txt";
-            this.Price_txt.Size = new System.Drawing.Size(100, 20);
+            this.Price_txt.Size = new System.Drawing.Size(124, 20);
             this.Price_txt.TabIndex = 7;
             // 
             // Quantity_num
             // 
-            this.Quantity_num.Location = new System.Drawing.Point(309, 104);
+            this.Quantity_num.Location = new System.Drawing.Point(159, 117);
             this.Quantity_num.Name = "Quantity_num";
             this.Quantity_num.Size = new System.Drawing.Size(41, 20);
             this.Quantity_num.TabIndex = 4;
@@ -300,7 +319,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(255, 106);
+            this.label3.Location = new System.Drawing.Point(156, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 3;
@@ -309,7 +328,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 107);
+            this.label2.Location = new System.Drawing.Point(19, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -319,55 +338,74 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 7);
+            this.label1.Location = new System.Drawing.Point(16, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Sales";
             // 
-            // label6
+            // month_txt
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(255, 146);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Month";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.month_txt.Location = new System.Drawing.Point(275, 158);
+            this.month_txt.Name = "month_txt";
+            this.month_txt.Size = new System.Drawing.Size(100, 20);
+            this.month_txt.TabIndex = 20;
             // 
-            // label9
+            // year_txt
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(255, 185);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Year";
+            this.year_txt.Location = new System.Drawing.Point(274, 208);
+            this.year_txt.Name = "year_txt";
+            this.year_txt.Size = new System.Drawing.Size(100, 20);
+            this.year_txt.TabIndex = 21;
             // 
-            // Month_Combo
+            // sales_id
             // 
-            this.Month_Combo.FormattingEnabled = true;
-            this.Month_Combo.Location = new System.Drawing.Point(309, 142);
-            this.Month_Combo.Name = "Month_Combo";
-            this.Month_Combo.Size = new System.Drawing.Size(121, 21);
-            this.Month_Combo.TabIndex = 20;
+            this.sales_id.Location = new System.Drawing.Point(331, 117);
+            this.sales_id.Name = "sales_id";
+            this.sales_id.Size = new System.Drawing.Size(43, 20);
+            this.sales_id.TabIndex = 22;
+            this.sales_id.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.sales_id.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
-            // Year_Combo
+            // label4
             // 
-            this.Year_Combo.FormattingEnabled = true;
-            this.Year_Combo.Location = new System.Drawing.Point(309, 182);
-            this.Year_Combo.Name = "Year_Combo";
-            this.Year_Combo.Size = new System.Drawing.Size(121, 21);
-            this.Year_Combo.TabIndex = 21;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(272, 119);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Date ID";
             // 
-            // Manufacturer_Combo
+            // Calc_btn
             // 
-            this.Manufacturer_Combo.FormattingEnabled = true;
-            this.Manufacturer_Combo.Location = new System.Drawing.Point(103, 63);
-            this.Manufacturer_Combo.Name = "Manufacturer_Combo";
-            this.Manufacturer_Combo.Size = new System.Drawing.Size(121, 21);
-            this.Manufacturer_Combo.TabIndex = 22;
-            this.Manufacturer_Combo.SelectedIndexChanged += new System.EventHandler(this.Manufacturer_Combo_SelectedIndexChanged);
+            this.Calc_btn.Location = new System.Drawing.Point(22, 155);
+            this.Calc_btn.Name = "Calc_btn";
+            this.Calc_btn.Size = new System.Drawing.Size(182, 23);
+            this.Calc_btn.TabIndex = 24;
+            this.Calc_btn.Text = "Calculate Total";
+            this.Calc_btn.UseVisualStyleBackColor = true;
+            this.Calc_btn.Click += new System.EventHandler(this.Calc_btn_Click);
+            // 
+            // PID_txt
+            // 
+            this.PID_txt.Location = new System.Drawing.Point(275, 64);
+            this.PID_txt.Name = "PID_txt";
+            this.PID_txt.Size = new System.Drawing.Size(69, 20);
+            this.PID_txt.TabIndex = 25;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(272, 45);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 13);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "Product ID";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // MainForm
             // 
@@ -387,6 +425,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Quantity_num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_id)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -410,14 +449,17 @@
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox Product_combo;
         private System.Windows.Forms.Button View_txt;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox Manufacturer_Combo;
-        private System.Windows.Forms.ComboBox Year_Combo;
-        private System.Windows.Forms.ComboBox Month_Combo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown sales_id;
+        private System.Windows.Forms.TextBox year_txt;
+        private System.Windows.Forms.TextBox month_txt;
+        private System.Windows.Forms.Button Calc_btn;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox PID_txt;
     }
 }
 
