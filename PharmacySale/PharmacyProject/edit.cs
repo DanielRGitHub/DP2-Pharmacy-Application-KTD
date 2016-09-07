@@ -5,15 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace PharmacyProject
 {
-    public partial class MainForm : Form
+    public partial class edit : Form
     {
-        public MainForm()
+        public edit()
         {
             InitializeComponent();
             FillCombo();
@@ -55,9 +54,7 @@ namespace PharmacyProject
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            edit eform = new edit();
-            eform.ShowDialog();
+
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -70,19 +67,19 @@ namespace PharmacyProject
         private void button1_Click(object sender, EventArgs e)
         {
             string constring = "datasource=localhost;port=3306;username=root;password=sample1";
-            string Query = "INSERT INTO pharmacy_db.Sales (quantity, product_id, total, month, year) VALUES ('" + this.Quantity_num.Text + "', '" + this.PID_txt.Text + "', '" + this.Total_txt.Text + "', '" + this.month_txt.Text + "', '" + this.year_txt.Text + "') ;"; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
+            string Query = "UPDATE pharmacy_db.Sales SET sales_id= '" + this.sales_id_update.Text + "', quantity='" + this.Quantity_num.Text + "', product_id='" + this.PID_txt.Text + "', total='" + this.Total_txt.Text + "', month='" + this.month_txt.Text + "', year='" + this.year_txt.Text + "' WHERE sales_id='" + this.sales_id_update.Text + "' ;"; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
 
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
             MySqlDataReader myReader;
-            
+
             try
             {
                 conDataBase.Open();
                 myReader = cmdDataBase.ExecuteReader();
                 MessageBox.Show("SUCCESSFULLY ADDED");
                 while (myReader.Read())
-            
+
                 { }
             }
             catch (Exception error)
@@ -94,7 +91,7 @@ namespace PharmacyProject
             string constring = "datasource=localhost;port=3306;username=root;password=sample1";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand("SELECT * FROM pharmacy_db.Sales;", conDatabase);
-            
+
             try
             {
                 MySqlDataAdapter sda = new MySqlDataAdapter();
@@ -163,26 +160,23 @@ namespace PharmacyProject
 
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            displaysales eform = new displaysales();
-            eform.ShowDialog();
-        }
-
-        private void month_txt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void year_txt_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
+            MainForm eform = new MainForm();
+            eform.ShowDialog();
+        }
 
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            displaysales eform = new displaysales();
+            eform.ShowDialog();
         }
     }
 }
