@@ -132,6 +132,9 @@ VALUES ('November', 2017);
 INSERT INTO SalesDate(`month`, `year`) 
 VALUES ('December', 2017);
 
+ALTER TABLE Sales
+ADD total INT NOT NULL;
+
 
 
 
