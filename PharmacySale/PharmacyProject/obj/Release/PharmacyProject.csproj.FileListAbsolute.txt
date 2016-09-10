@@ -36,3 +36,16 @@ C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\Pharm
 C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.edit.resources
 C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.search.resources
 C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.displaysales.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe.config
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.exe
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.pdb
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\bin\Release\MySql.Data.xml
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csprojResolveAssemblyReference.cache
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.displaysales.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.edit.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.MainForm.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.Properties.Resources.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.search.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csproj.GenerateResource.Cache

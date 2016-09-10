@@ -59,29 +59,28 @@ namespace PharmacyProject
             this.chart1.Series["Month"].Points.AddXY("February", 60);
             this.chart1.Series["Month"].Points.AddXY("March", 30);
             this.chart1.Series["Month"].Points.AddXY("April", 80);*/
-
             string constring = "datasource=localhost;port=3306;username=root;password=sample1";
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand("SELECT * FROM pharmacy_db.sales", conDataBase);
             MySqlDataReader myReader;
-
-            try 
+            chart1.Series[0].Points.Clear();
+            try
             {
                 conDataBase.Open();
                 myReader = cmdDataBase.ExecuteReader();
+
                 while (myReader.Read())
                 {
                     this.chart1.Series["Month"].Points.AddXY(myReader.GetString("month"), myReader.GetInt32("total"));
                 }
             }
+
             catch (Exception error)
             { MessageBox.Show(error.Message); }
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-          
-        }
+        { }
     }
 }
 
