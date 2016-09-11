@@ -15,6 +15,33 @@ namespace PharmacyProject
         public displaysales()
         {
             InitializeComponent();
+            chartDisplay();
+        }
+
+        void chartDisplay ()
+        {
+            /*this.chart1.Series["Month"].Points.AddXY("January", 120);
+              this.chart1.Series["Month"].Points.AddXY("February", 60);
+              this.chart1.Series["Month"].Points.AddXY("March", 30);
+              this.chart1.Series["Month"].Points.AddXY("April", 80);*/
+            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand("select month, sum(total) as total from pharmacy_db.sales group by month order by month DESC", conDataBase);
+            MySqlDataReader myReader;
+            chart1.Series[0].Points.Clear();
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    this.chart1.Series["Month"].Points.AddXY(myReader.GetString("month"), myReader.GetInt32("total"));
+                }
+            }
+
+            catch (Exception error)
+            { MessageBox.Show(error.Message); }
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -55,28 +82,6 @@ namespace PharmacyProject
 
         private void Display_chart_txt_Click(object sender, EventArgs e)
         {
-            /*this.chart1.Series["Month"].Points.AddXY("January", 120);
-            this.chart1.Series["Month"].Points.AddXY("February", 60);
-            this.chart1.Series["Month"].Points.AddXY("March", 30);
-            this.chart1.Series["Month"].Points.AddXY("April", 80);*/
-            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand("select month, sum(total) as total from pharmacy_db.sales group by month order by month DESC", conDataBase);
-            MySqlDataReader myReader;
-            chart1.Series[0].Points.Clear();
-            try
-            {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-
-                while (myReader.Read())
-                {
-                    this.chart1.Series["Month"].Points.AddXY(myReader.GetString("month"), myReader.GetInt32("total"));
-                }
-            }
-
-            catch (Exception error)
-            { MessageBox.Show(error.Message); }
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
