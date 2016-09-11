@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel2 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label8 = new System.Windows.Forms.Label();
@@ -39,9 +39,8 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Display_chart_txt = new System.Windows.Forms.Button();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -146,12 +145,30 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.chart1);
-            this.panel1.Controls.Add(this.Display_chart_txt);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(460, 443);
             this.panel1.TabIndex = 1;
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(17, 47);
+            this.chart1.Name = "chart1";
+            series1.BorderColor = System.Drawing.Color.DarkGreen;
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            series1.Legend = "Legend1";
+            series1.Name = "Month";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(437, 212);
+            this.chart1.TabIndex = 2;
+            this.chart1.Text = "chart1";
             // 
             // label1
             // 
@@ -163,35 +180,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Display Monthly Sales";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // Display_chart_txt
-            // 
-            this.Display_chart_txt.Location = new System.Drawing.Point(160, 280);
-            this.Display_chart_txt.Name = "Display_chart_txt";
-            this.Display_chart_txt.Size = new System.Drawing.Size(114, 23);
-            this.Display_chart_txt.TabIndex = 1;
-            this.Display_chart_txt.Text = "Display Graph";
-            this.Display_chart_txt.UseVisualStyleBackColor = true;
-            this.Display_chart_txt.Click += new System.EventHandler(this.Display_chart_txt_Click);
-            // 
-            // chart1
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(17, 47);
-            this.chart1.Name = "chart1";
-            series2.BorderColor = System.Drawing.Color.DarkGreen;
-            series2.BorderWidth = 2;
-            series2.ChartArea = "ChartArea1";
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            series2.Legend = "Legend1";
-            series2.Name = "Month";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(437, 212);
-            this.chart1.TabIndex = 2;
-            this.chart1.Text = "chart1";
             // 
             // displaysales
             // 
@@ -224,7 +212,6 @@
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.Button Display_chart_txt;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
