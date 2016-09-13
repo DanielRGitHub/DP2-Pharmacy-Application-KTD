@@ -26,7 +26,7 @@ namespace PharmacyProject
               this.chart1.Series["Month"].Points.AddXY("April", 80);*/
             string constring = "datasource=localhost;port=3306;username=root;password=sample1";
             MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand("select month, sum(total) as total from pharmacy_db.sales group by month order by month DESC", conDataBase);
+            MySqlCommand cmdDataBase = new MySqlCommand("select month, sum(total) as total from pharmacy_db.sales group by month order by month", conDataBase);
             MySqlDataReader myReader;
             chart1.Series[0].Points.Clear();
             try
