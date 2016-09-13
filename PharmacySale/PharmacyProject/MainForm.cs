@@ -17,6 +17,7 @@ namespace PharmacyProject
         {
             InitializeComponent();
             FillCombo();
+            DisplaySales();
         }
 
         void FillCombo()
@@ -89,12 +90,12 @@ namespace PharmacyProject
             { MessageBox.Show(error.Message); }
         }
 
-        private void View_txt_Click(object sender, EventArgs e)
+        void DisplaySales ()
         {
             string constring = "datasource=localhost;port=3306;username=root;password=sample1";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmdDatabase = new MySqlCommand("SELECT * FROM pharmacy_db.Sales;", conDatabase);
-            
+
             try
             {
                 MySqlDataAdapter sda = new MySqlDataAdapter();
@@ -110,6 +111,11 @@ namespace PharmacyProject
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void View_txt_Click(object sender, EventArgs e)
+        {
+         
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
