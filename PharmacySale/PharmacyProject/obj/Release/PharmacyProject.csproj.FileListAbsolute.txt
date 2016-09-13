@@ -55,3 +55,8 @@ D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyP
 D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.ContainerForm.resources
 D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.EditSale.resources
 D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SearchSale.resources
+C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.AddSale.resources
+C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.EditSale.resources
+C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.Main.resources
+C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesInfo.resources
+C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SearchSale.resources
