@@ -49,3 +49,9 @@ D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyP
 D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.Properties.Resources.resources
 D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.search.resources
 D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csproj.GenerateResource.Cache
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.Main.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesInfo.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.AddSale.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.ContainerForm.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.EditSale.resources
+D:\SWINBURNE\SWE30010DP2KTD\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SearchSale.resources
