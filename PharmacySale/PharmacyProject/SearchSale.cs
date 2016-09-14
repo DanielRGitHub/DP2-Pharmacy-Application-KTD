@@ -66,7 +66,11 @@ namespace PharmacyProject
             { MessageBox.Show(error.Message); }
         }
 
+<<<<<<< HEAD
         void ViewText ()
+=======
+        void ViewText()
+>>>>>>> refs/remotes/origin/D1/09
         {
             string constring = "datasource=localhost;port=3306;username=root;password=sample1";
             MySqlConnection conDatabase = new MySqlConnection(constring);
