@@ -89,6 +89,7 @@ namespace PharmacyProject
             }
         }
 
+
         private void PID_txt_TextChanged(object sender, EventArgs e)
         {
             string constring = "datasource=localhost;port=3306;username=root;password=sample1";

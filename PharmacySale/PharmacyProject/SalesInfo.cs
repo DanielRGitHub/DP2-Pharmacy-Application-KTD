@@ -18,7 +18,7 @@ namespace PharmacyProject
             chartDisplay();
         }
 
-        void chartDisplay()
+        private void chartDisplay()
         {
             string constring = "datasource=localhost;port=3306;username=root;password=sample1";
             MySqlConnection conDataBase = new MySqlConnection(constring);
