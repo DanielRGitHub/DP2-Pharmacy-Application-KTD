@@ -16,6 +16,7 @@ namespace PharmacyProject
         public SearchSale()
         {
             InitializeComponent();
+            ViewText();
             FillCombo();
         }
 
@@ -65,7 +66,7 @@ namespace PharmacyProject
             { MessageBox.Show(error.Message); }
         }
 
-        private void View_txt_Click(object sender, EventArgs e)
+        void ViewText()
         {
             string constring = "datasource=localhost;port=3306;username=root;password=sample1";
             MySqlConnection conDatabase = new MySqlConnection(constring);
