@@ -43,6 +43,13 @@ namespace PharmacyProject
             obj.MdiParent = this;
             obj.Show();
         }
+
+        private void LoadInvMgmt() {
+            InventoryMgmt obj = new InventoryMgmt();
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
         private void CloseSalesInfo()
         {
             Form obj = Application.OpenForms["SalesInfo"];
@@ -80,6 +87,11 @@ namespace PharmacyProject
         private void SearchSaleLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LoadSearchSale();
+        }
+
+        private void InvMgmtLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoadInvMgmt();
         }
     }
 }
