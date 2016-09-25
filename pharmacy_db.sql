@@ -18,6 +18,16 @@ PRIMARY KEY(product_id),
 FOREIGN KEY(manufacturer_id) REFERENCES Manufacturer(manufacturer_id)
 );
 
+CREATE TABLE ProductStock
+(
+product_id INT NOT NULL,
+stock_available INT NOT NULL,
+stock_threshold INT DEFAULT 0,
+use_threshold BOOLEAN NOT NULL DEFAULT FALSE,
+PRIMARY KEY(product_id),
+FOREIGN KEY(product_id) REFERENCES Product(product_id)
+);
+
 CREATE TABLE Sales
 (
 sales_id INT NOT NULL AUTO_INCREMENT,
