@@ -34,7 +34,7 @@
             this.enterLabel = new System.Windows.Forms.Label();
             this.searchByCbx = new System.Windows.Forms.ComboBox();
             this.enterInput = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.stockInventoryTable = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -44,7 +44,7 @@
             this.dateFromLabel = new System.Windows.Forms.Label();
             this.dateFilterFromDP = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stockInventoryTable)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,13 +113,14 @@
             this.enterInput.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.enterInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.enterInput_KeyPress_1);
             // 
-            // dataGridView1
+            // stockInventoryTable
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 245);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(505, 255);
-            this.dataGridView1.TabIndex = 14;
+            this.stockInventoryTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.stockInventoryTable.Location = new System.Drawing.Point(12, 245);
+            this.stockInventoryTable.Name = "stockInventoryTable";
+            this.stockInventoryTable.ReadOnly = true;
+            this.stockInventoryTable.Size = new System.Drawing.Size(505, 255);
+            this.stockInventoryTable.TabIndex = 14;
             // 
             // comboBox1
             // 
@@ -227,7 +228,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.stockInventoryTable);
             this.Controls.Add(this.enterInput);
             this.Controls.Add(this.searchByCbx);
             this.Controls.Add(this.enterLabel);
@@ -241,7 +242,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "InventoryMgmt";
             this.Load += new System.EventHandler(this.InventoryMgmt_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stockInventoryTable)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -257,7 +258,7 @@
         private System.Windows.Forms.Label enterLabel;
         private System.Windows.Forms.ComboBox searchByCbx;
         private System.Windows.Forms.TextBox enterInput;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView stockInventoryTable;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,8 +11,10 @@ using System.Windows.Forms;
 
 namespace PharmacyProject
 {
+    
     public partial class InventoryMgmt : Form
     {
+        private DataTable _tableData;
         public InventoryMgmt()
         {
             InitializeComponent();
@@ -77,7 +80,25 @@ namespace PharmacyProject
 
         private void InventoryMgmt_Load(object sender, EventArgs e)
         {
+            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
+            MySqlConnection conDatabase = new MySqlConnection(constring);
+            MySqlCommand cmdDatabase = new MySqlCommand("SELECT pharmacy_db.ProductStock.product_id AS 'Product ID', brand_name AS 'Product Name', stock_available AS 'Stock Available', stock_threshold AS 'Stock Threshold' FROM pharmacy_db.ProductStock JOIN pharmacy_db.Product ON pharmacy_db.ProductStock.product_id=pharmacy_db.Product.product_id;", conDatabase);
 
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmdDatabase;
+                _tableData = new DataTable();
+                sda.Fill(_tableData);
+                BindingSource bSource = new BindingSource();
+                bSource.DataSource = _tableData;
+                stockInventoryTable.DataSource = bSource;
+                sda.Update(_tableData);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
