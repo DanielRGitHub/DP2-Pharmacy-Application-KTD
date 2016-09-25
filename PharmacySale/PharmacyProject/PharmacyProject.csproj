@@ -76,6 +76,12 @@
     <Compile Include="SalesInfo.Designer.cs">
       <DependentUpon>SalesInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalesPrediction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesPrediction.Designer.cs">
+      <DependentUpon>SalesPrediction.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchSale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
     <EmbeddedResource Include="SalesInfo.resx">
       <DependentUpon>SalesInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesPrediction.resx">
+      <DependentUpon>SalesPrediction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchSale.resx">
       <DependentUpon>SearchSale.cs</DependentUpon>

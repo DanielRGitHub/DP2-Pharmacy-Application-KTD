@@ -35,12 +35,14 @@
             this.EditSaleLink = new System.Windows.Forms.LinkLabel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.SalesPredictionLink = new System.Windows.Forms.LinkLabel();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.panel2.Controls.Add(this.SalesPredictionLink);
             this.panel2.Controls.Add(this.AddSaleLink);
             this.panel2.Controls.Add(this.SearchSaleLink);
             this.panel2.Controls.Add(this.SaleInfoLink);
@@ -71,7 +73,7 @@
             this.SearchSaleLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SearchSaleLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchSaleLink.LinkColor = System.Drawing.Color.White;
-            this.SearchSaleLink.Location = new System.Drawing.Point(32, 311);
+            this.SearchSaleLink.Location = new System.Drawing.Point(32, 313);
             this.SearchSaleLink.Name = "SearchSaleLink";
             this.SearchSaleLink.Size = new System.Drawing.Size(83, 20);
             this.SearchSaleLink.TabIndex = 8;
@@ -128,6 +130,20 @@
             this.panel4.Size = new System.Drawing.Size(711, 115);
             this.panel4.TabIndex = 7;
             // 
+            // SalesPredictionLink
+            // 
+            this.SalesPredictionLink.AutoSize = true;
+            this.SalesPredictionLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SalesPredictionLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesPredictionLink.LinkColor = System.Drawing.Color.White;
+            this.SalesPredictionLink.Location = new System.Drawing.Point(32, 370);
+            this.SalesPredictionLink.Name = "SalesPredictionLink";
+            this.SalesPredictionLink.Size = new System.Drawing.Size(111, 20);
+            this.SalesPredictionLink.TabIndex = 10;
+            this.SalesPredictionLink.TabStop = true;
+            this.SalesPredictionLink.Text = "Sales Prediction";
+            this.SalesPredictionLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SalesPredictionLink_LinkClicked_1);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,5 +172,6 @@
         private System.Windows.Forms.LinkLabel EditSaleLink;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.LinkLabel SalesPredictionLink;
     }
 }

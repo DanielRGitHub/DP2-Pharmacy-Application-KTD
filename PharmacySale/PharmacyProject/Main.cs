@@ -43,6 +43,14 @@ namespace PharmacyProject
             obj.MdiParent = this;
             obj.Show();
         }
+
+        private void LoadSalesPrediction()
+        {
+            SalesPrediction obj = new SalesPrediction();
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
         private void CloseSalesInfo()
         {
             Form obj = Application.OpenForms["SalesInfo"];
@@ -80,6 +88,11 @@ namespace PharmacyProject
         private void SearchSaleLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LoadSearchSale();
+        }
+
+        private void SalesPredictionLink_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoadSalesPrediction();
         }
     }
 }
