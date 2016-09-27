@@ -41,5 +41,17 @@ namespace PharmacyProject
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string constring = "datasource=localhost;port=3306;username=root;password=sample1";
+            string Query = " SELECT * FROM pharmacy_db.Sales WHERE month='" + textBox1.Text + "'; "; /* WRITE APPROPRIATE DATABASE VALUES ON THIS LINE */
+
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            DataView SID = new DataView(dbdataset);
+            SID.RowFilter = string.Format("convert(month, 'System.String') LIKE '%{0}%'", textBox1.Text);
+            dataGridView1.DataSource = SID;
+        }
     }
 }
