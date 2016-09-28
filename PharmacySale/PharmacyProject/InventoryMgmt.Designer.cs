@@ -34,6 +34,9 @@
             this.enterLabel = new System.Windows.Forms.Label();
             this.searchByCbx = new System.Windows.Forms.ComboBox();
             this.enterInput = new System.Windows.Forms.TextBox();
+            this.stockInventoryTable = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.dateToLabel = new System.Windows.Forms.Label();
@@ -41,9 +44,8 @@
             this.dateFromLabel = new System.Windows.Forms.Label();
             this.dateFilterFromDP = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.stockInventoryTable)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -111,6 +113,41 @@
             this.enterInput.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.enterInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.enterInput_KeyPress_1);
             // 
+            // stockInventoryTable
+            // 
+            this.stockInventoryTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.stockInventoryTable.Location = new System.Drawing.Point(12, 245);
+            this.stockInventoryTable.Name = "stockInventoryTable";
+            this.stockInventoryTable.ReadOnly = true;
+            this.stockInventoryTable.Size = new System.Drawing.Size(505, 255);
+            this.stockInventoryTable.TabIndex = 14;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "ID",
+            "Name",
+            "Quantity",
+            "Threshold (Number)",
+            "Threshold (%)"});
+            this.comboBox1.Location = new System.Drawing.Point(130, 163);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(106, 21);
+            this.comboBox1.TabIndex = 16;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(81, 167);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Sort by:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.checkBox1);
@@ -123,7 +160,7 @@
             this.groupBox1.Size = new System.Drawing.Size(228, 141);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Date Stock Filter";
+            this.groupBox1.Text = "Date Filter";
             // 
             // checkBox1
             // 
@@ -142,9 +179,9 @@
             this.dateToLabel.Enabled = false;
             this.dateToLabel.Location = new System.Drawing.Point(15, 87);
             this.dateToLabel.Name = "dateToLabel";
-            this.dateToLabel.Size = new System.Drawing.Size(66, 13);
+            this.dateToLabel.Size = new System.Drawing.Size(23, 13);
             this.dateToLabel.TabIndex = 17;
-            this.dateToLabel.Text = "Modified To:";
+            this.dateToLabel.Text = "To:";
             // 
             // dateFilterToDP
             // 
@@ -160,9 +197,9 @@
             this.dateFromLabel.Enabled = false;
             this.dateFromLabel.Location = new System.Drawing.Point(15, 43);
             this.dateFromLabel.Name = "dateFromLabel";
-            this.dateFromLabel.Size = new System.Drawing.Size(76, 13);
+            this.dateFromLabel.Size = new System.Drawing.Size(33, 13);
             this.dateFromLabel.TabIndex = 15;
-            this.dateFromLabel.Text = "Modified From:";
+            this.dateFromLabel.Text = "From:";
             // 
             // dateFilterFromDP
             // 
@@ -174,24 +211,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(161, 159);
+            this.button1.Location = new System.Drawing.Point(161, 190);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 18;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 246);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(505, 254);
-            this.dataGridView1.TabIndex = 19;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.VisibleChanged += new System.EventHandler(this.dataGridView1_VisibleChanged);
             // 
             // InventoryMgmt
             // 
@@ -199,9 +224,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 512);
             this.ControlBox = false;
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.stockInventoryTable);
             this.Controls.Add(this.enterInput);
             this.Controls.Add(this.searchByCbx);
             this.Controls.Add(this.enterLabel);
@@ -215,9 +242,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "InventoryMgmt";
             this.Load += new System.EventHandler(this.InventoryMgmt_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.stockInventoryTable)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,6 +258,9 @@
         private System.Windows.Forms.Label enterLabel;
         private System.Windows.Forms.ComboBox searchByCbx;
         private System.Windows.Forms.TextBox enterInput;
+        private System.Windows.Forms.DataGridView stockInventoryTable;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label dateToLabel;
@@ -238,6 +268,5 @@
         private System.Windows.Forms.Label dateFromLabel;
         private System.Windows.Forms.DateTimePicker dateFilterFromDP;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
