@@ -53,5 +53,18 @@ namespace PharmacyProject
             SID.RowFilter = string.Format("convert(month, 'System.String') LIKE '%{0}%'", textBox1.Text);
             dataGridView1.DataSource = SID;
         }
+
+        private void calculate_avg_Click(object sender, EventArgs e)
+        {
+            int sum = 0;
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
+            }
+
+            int count_row = dataGridView1.Rows.Count;
+            double avg = sum / (count_row - 1);
+            MessageBox.Show("For the month of " + textBox1.Text + " the predicted average sales value is: $" + avg.ToString() + ".00");
+        }
     }
 }
