@@ -34,6 +34,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.calculate_avg = new System.Windows.Forms.Button();
+            this.promptMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,17 +86,38 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(206, 210);
+            this.textBox1.Location = new System.Drawing.Point(206, 195);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 52;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // calculate_avg
+            // 
+            this.calculate_avg.Location = new System.Drawing.Point(219, 236);
+            this.calculate_avg.Name = "calculate_avg";
+            this.calculate_avg.Size = new System.Drawing.Size(75, 23);
+            this.calculate_avg.TabIndex = 53;
+            this.calculate_avg.Text = "Calculate";
+            this.calculate_avg.UseVisualStyleBackColor = true;
+            this.calculate_avg.Click += new System.EventHandler(this.calculate_avg_Click);
+            // 
+            // promptMessage
+            // 
+            this.promptMessage.AutoSize = true;
+            this.promptMessage.Location = new System.Drawing.Point(203, 179);
+            this.promptMessage.Name = "promptMessage";
+            this.promptMessage.Size = new System.Drawing.Size(76, 13);
+            this.promptMessage.TabIndex = 54;
+            this.promptMessage.Text = "Enter a month:";
             // 
             // SalesPrediction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 512);
+            this.Controls.Add(this.promptMessage);
+            this.Controls.Add(this.calculate_avg);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
@@ -113,5 +136,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button calculate_avg;
+        private System.Windows.Forms.Label promptMessage;
     }
 }
