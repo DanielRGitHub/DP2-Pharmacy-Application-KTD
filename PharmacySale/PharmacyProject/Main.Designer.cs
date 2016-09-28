@@ -35,14 +35,22 @@
             this.EditSaleLink = new System.Windows.Forms.LinkLabel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.InvMgmtLink = new System.Windows.Forms.LinkLabel();
+=======
+            this.SalesPredictionLink = new System.Windows.Forms.LinkLabel();
+>>>>>>> refs/remotes/origin/master
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+<<<<<<< HEAD
             this.panel2.Controls.Add(this.InvMgmtLink);
+=======
+            this.panel2.Controls.Add(this.SalesPredictionLink);
+>>>>>>> refs/remotes/origin/master
             this.panel2.Controls.Add(this.AddSaleLink);
             this.panel2.Controls.Add(this.SearchSaleLink);
             this.panel2.Controls.Add(this.SaleInfoLink);
@@ -75,8 +83,12 @@
             this.SearchSaleLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SearchSaleLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchSaleLink.LinkColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.SearchSaleLink.Location = new System.Drawing.Point(48, 478);
             this.SearchSaleLink.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.SearchSaleLink.Location = new System.Drawing.Point(32, 313);
+>>>>>>> refs/remotes/origin/master
             this.SearchSaleLink.Name = "SearchSaleLink";
             this.SearchSaleLink.Size = new System.Drawing.Size(124, 29);
             this.SearchSaleLink.TabIndex = 8;
@@ -137,6 +149,7 @@
             this.panel4.Size = new System.Drawing.Size(1066, 177);
             this.panel4.TabIndex = 7;
             // 
+<<<<<<< HEAD
             // InvMgmtLink
             // 
             this.InvMgmtLink.AutoSize = true;
@@ -151,6 +164,21 @@
             this.InvMgmtLink.TabStop = true;
             this.InvMgmtLink.Text = "Inventory \r\nManagement";
             this.InvMgmtLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.InvMgmtLink_LinkClicked);
+=======
+            // SalesPredictionLink
+            // 
+            this.SalesPredictionLink.AutoSize = true;
+            this.SalesPredictionLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SalesPredictionLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesPredictionLink.LinkColor = System.Drawing.Color.White;
+            this.SalesPredictionLink.Location = new System.Drawing.Point(32, 370);
+            this.SalesPredictionLink.Name = "SalesPredictionLink";
+            this.SalesPredictionLink.Size = new System.Drawing.Size(111, 20);
+            this.SalesPredictionLink.TabIndex = 10;
+            this.SalesPredictionLink.TabStop = true;
+            this.SalesPredictionLink.Text = "Sales Prediction";
+            this.SalesPredictionLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SalesPredictionLink_LinkClicked_1);
+>>>>>>> refs/remotes/origin/master
             // 
             // Main
             // 
@@ -181,6 +209,10 @@
         private System.Windows.Forms.LinkLabel EditSaleLink;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel4;
+<<<<<<< HEAD
         private System.Windows.Forms.LinkLabel InvMgmtLink;
+=======
+        private System.Windows.Forms.LinkLabel SalesPredictionLink;
+>>>>>>> refs/remotes/origin/master
     }
 }
