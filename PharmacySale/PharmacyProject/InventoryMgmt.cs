@@ -92,12 +92,71 @@ namespace PharmacyProject
                 sda.Fill(_tableData);
                 BindingSource bSource = new BindingSource();
                 bSource.DataSource = _tableData;
-                stockInventoryTable.DataSource = bSource;
+                
                 sda.Update(_tableData);
+
+                dataGridView1.DataSource = _tableData;
+
+                // -- EDIT BUTTON --
+
+                DataGridViewButtonColumn dcButton = new DataGridViewButtonColumn();
+                //set column header
+                dcButton.HeaderText = "Edit";
+                dcButton.Text = "Edit";
+                //make buttons have header in the button text
+                dcButton.UseColumnTextForButtonValue = true;
+                //edit tooltip
+                dcButton.ToolTipText = "Edit products inventory data";
+
+
+
+                //remove row header (first column)
+                dataGridView1.RowHeadersVisible = false;
+
+                //remove bottom editing row
+                dataGridView1.AllowUserToAddRows = false;
+
+                //add the column
+                dataGridView1.Columns.Add(dcButton);
+
+                //autosize columns
+                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+
+                //define row size
+                dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+                dataGridView1.AllowUserToResizeRows = false;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridView1_VisibleChanged(object sender, EventArgs e)
+        {
+            //set static size
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                row.Height = 25;
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                //get row index
+
+                //create the form
+
+                //set form product id variable relative to row index
+
+                //show the form so user can edit that particular products information
+
+                MessageBox.Show("Hello " + e.RowIndex);
             }
         }
     }

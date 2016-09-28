@@ -44,14 +44,18 @@ namespace PharmacyProject
             obj.Show();
         }
 
-<<<<<<< HEAD
+
         private void LoadInvMgmt() {
             InventoryMgmt obj = new InventoryMgmt();
-=======
+
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
         private void LoadSalesPrediction()
         {
             SalesPrediction obj = new SalesPrediction();
->>>>>>> refs/remotes/origin/master
+
             obj.MdiParent = this;
             obj.Show();
         }
@@ -95,15 +99,15 @@ namespace PharmacyProject
             LoadSearchSale();
         }
 
-<<<<<<< HEAD
+
         private void InvMgmtLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LoadInvMgmt();
-=======
+        }
+
         private void SalesPredictionLink_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LoadSalesPrediction();
->>>>>>> refs/remotes/origin/master
         }
     }
 }
