@@ -67,7 +67,7 @@ namespace PharmacyProject
 
         private void Main_Load(object sender, EventArgs e)
         {
-            LoadSalesInfo();
+            LoadAddSale();
         }
 
         private void SaleInfoLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
