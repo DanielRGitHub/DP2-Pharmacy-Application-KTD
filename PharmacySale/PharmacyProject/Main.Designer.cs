@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SalesPredictionLink = new System.Windows.Forms.LinkLabel();
             this.AddSaleLink = new System.Windows.Forms.LinkLabel();
             this.SearchSaleLink = new System.Windows.Forms.LinkLabel();
             this.SaleInfoLink = new System.Windows.Forms.LinkLabel();
             this.EditSaleLink = new System.Windows.Forms.LinkLabel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.SalesPredictionLink = new System.Windows.Forms.LinkLabel();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,13 +53,27 @@
             this.panel2.Size = new System.Drawing.Size(182, 512);
             this.panel2.TabIndex = 8;
             // 
+            // SalesPredictionLink
+            // 
+            this.SalesPredictionLink.AutoSize = true;
+            this.SalesPredictionLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SalesPredictionLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesPredictionLink.LinkColor = System.Drawing.Color.White;
+            this.SalesPredictionLink.Location = new System.Drawing.Point(32, 370);
+            this.SalesPredictionLink.Name = "SalesPredictionLink";
+            this.SalesPredictionLink.Size = new System.Drawing.Size(111, 20);
+            this.SalesPredictionLink.TabIndex = 10;
+            this.SalesPredictionLink.TabStop = true;
+            this.SalesPredictionLink.Text = "Sales Prediction";
+            this.SalesPredictionLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SalesPredictionLink_LinkClicked_1);
+            // 
             // AddSaleLink
             // 
             this.AddSaleLink.AutoSize = true;
             this.AddSaleLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddSaleLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddSaleLink.LinkColor = System.Drawing.Color.White;
-            this.AddSaleLink.Location = new System.Drawing.Point(32, 195);
+            this.AddSaleLink.Location = new System.Drawing.Point(32, 130);
             this.AddSaleLink.Name = "AddSaleLink";
             this.AddSaleLink.Size = new System.Drawing.Size(65, 20);
             this.AddSaleLink.TabIndex = 9;
@@ -87,7 +101,7 @@
             this.SaleInfoLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SaleInfoLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaleInfoLink.LinkColor = System.Drawing.Color.White;
-            this.SaleInfoLink.Location = new System.Drawing.Point(32, 134);
+            this.SaleInfoLink.Location = new System.Drawing.Point(31, 192);
             this.SaleInfoLink.Name = "SaleInfoLink";
             this.SaleInfoLink.Size = new System.Drawing.Size(112, 20);
             this.SaleInfoLink.TabIndex = 7;
@@ -129,20 +143,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(711, 115);
             this.panel4.TabIndex = 7;
-            // 
-            // SalesPredictionLink
-            // 
-            this.SalesPredictionLink.AutoSize = true;
-            this.SalesPredictionLink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SalesPredictionLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SalesPredictionLink.LinkColor = System.Drawing.Color.White;
-            this.SalesPredictionLink.Location = new System.Drawing.Point(32, 370);
-            this.SalesPredictionLink.Name = "SalesPredictionLink";
-            this.SalesPredictionLink.Size = new System.Drawing.Size(111, 20);
-            this.SalesPredictionLink.TabIndex = 10;
-            this.SalesPredictionLink.TabStop = true;
-            this.SalesPredictionLink.Text = "Sales Prediction";
-            this.SalesPredictionLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SalesPredictionLink_LinkClicked_1);
             // 
             // Main
             // 
