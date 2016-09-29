@@ -62,6 +62,12 @@
     <Compile Include="EditSale.Designer.cs">
       <DependentUpon>EditSale.cs</DependentUpon>
     </Compile>
+    <Compile Include="InventoryMgmt-EditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryMgmt-EditView.Designer.cs">
+      <DependentUpon>InventoryMgmt-EditView.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryMgmt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditSale.resx">
       <DependentUpon>EditSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryMgmt-EditView.resx">
+      <DependentUpon>InventoryMgmt-EditView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryMgmt.resx">
       <DependentUpon>InventoryMgmt.cs</DependentUpon>

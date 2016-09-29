@@ -123,3 +123,5 @@ F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\P
 F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csproj.GenerateResource.Cache
 C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesPrediction.resources
 F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesPrediction.resources
+C:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesPrediction.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.InventoryMgmt_EditView.resources

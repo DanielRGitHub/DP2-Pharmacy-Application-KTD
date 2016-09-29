@@ -148,6 +148,7 @@ namespace PharmacyProject
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
             {
+
                 //get row index
 
                 //create the form
@@ -155,8 +156,14 @@ namespace PharmacyProject
                 //set form product id variable relative to row index
 
                 //show the form so user can edit that particular products information
+                 
+                MessageBox.Show("Hello " + e.RowIndex + "" + e.ColumnIndex);
 
-                MessageBox.Show("Hello " + e.RowIndex);
+                InventoryMgmt_EditView editView = new InventoryMgmt_EditView();
+
+                editView._productId = e.RowIndex;
+
+                editView.ShowDialog();
             }
         }
     }
