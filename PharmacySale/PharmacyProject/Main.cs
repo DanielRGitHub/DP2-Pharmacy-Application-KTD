@@ -60,6 +60,13 @@ namespace PharmacyProject
             obj.Show();
         }
 
+        private void LoadLowStock() {
+            InventoryLowStock obj = new InventoryLowStock();
+
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
         private void CloseSalesInfo()
         {
             Form obj = Application.OpenForms["SalesInfo"];
@@ -108,6 +115,11 @@ namespace PharmacyProject
         private void SalesPredictionLink_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LoadSalesPrediction();
+        }
+
+        private void InvLowStockLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoadLowStock();
         }
     }
 }

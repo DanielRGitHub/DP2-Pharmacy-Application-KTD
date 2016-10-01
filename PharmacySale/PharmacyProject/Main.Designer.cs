@@ -37,12 +37,14 @@
             this.EditSaleLink = new System.Windows.Forms.LinkLabel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.InvLowStockLink = new System.Windows.Forms.LinkLabel();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.panel2.Controls.Add(this.InvLowStockLink);
             this.panel2.Controls.Add(this.InvMgmtLink);
             this.panel2.Controls.Add(this.SalesPredictionLink);
             this.panel2.Controls.Add(this.AddSaleLink);
@@ -161,6 +163,20 @@
             this.panel4.Size = new System.Drawing.Size(711, 115);
             this.panel4.TabIndex = 7;
             // 
+            // InvLowStockLink
+            // 
+            this.InvLowStockLink.AutoSize = true;
+            this.InvLowStockLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InvLowStockLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InvLowStockLink.LinkColor = System.Drawing.Color.White;
+            this.InvLowStockLink.Location = new System.Drawing.Point(32, 453);
+            this.InvLowStockLink.Name = "InvLowStockLink";
+            this.InvLowStockLink.Size = new System.Drawing.Size(73, 20);
+            this.InvLowStockLink.TabIndex = 11;
+            this.InvLowStockLink.TabStop = true;
+            this.InvLowStockLink.Text = "Low Stock";
+            this.InvLowStockLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.InvLowStockLink_LinkClicked);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +209,6 @@
         private System.Windows.Forms.LinkLabel InvMgmtLink;
 
         private System.Windows.Forms.LinkLabel SalesPredictionLink;
-
+        private System.Windows.Forms.LinkLabel InvLowStockLink;
     }
 }

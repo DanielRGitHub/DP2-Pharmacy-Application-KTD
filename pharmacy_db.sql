@@ -82,6 +82,37 @@ VALUES (5, 'Crestor 10mg Tablets 30', 18.00);
 INSERT INTO Product(manufacturer_id, brand_name, product_price) 
 VALUES (5, 'Xylocaine Ointment 5% 35g', 39.00);
 
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(1, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(2, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(3, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(4, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(5, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(6, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(7, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(8, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(9, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(10, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(11, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(12, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(13, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(14, 0, 5, false);
+INSERT INTO ProductStock(product_id, stock_available, stock_threshold, use_threshold)
+VALUES(15, 0, 5, false);
+
 ALTER TABLE Sales
 ADD total INT NOT NULL;
 

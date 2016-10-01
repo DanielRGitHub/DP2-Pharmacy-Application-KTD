@@ -125,3 +125,5 @@ C:\Users\Daniel\Documents\GitHub\DP2-Pharmacy-Application-KTD\PharmacySale\Pharm
 F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesPrediction.resources
 C:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesPrediction.resources
 F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.InventoryMgmt_EditView.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.InventoryMgmt_AddSubtractQtyDialog.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.InventoryLowStock.resources

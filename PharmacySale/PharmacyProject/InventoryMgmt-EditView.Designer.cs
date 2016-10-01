@@ -32,26 +32,27 @@
             this.lblProductID = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.gbxQuick = new System.Windows.Forms.GroupBox();
+            this.btnSubNum = new System.Windows.Forms.Button();
+            this.btnAddNum = new System.Windows.Forms.Button();
+            this.btnDisableThreshold = new System.Windows.Forms.Button();
+            this.btnEnableThreshold = new System.Windows.Forms.Button();
+            this.btnSub5 = new System.Windows.Forms.Button();
+            this.btnAdd5 = new System.Windows.Forms.Button();
+            this.btnSub1 = new System.Windows.Forms.Button();
+            this.btnAdd1 = new System.Windows.Forms.Button();
+            this.btnClrStock = new System.Windows.Forms.Button();
+            this.gbxManual = new System.Windows.Forms.GroupBox();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnStockManual = new System.Windows.Forms.Button();
+            this.txtThreshold = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtManualQty = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.loadingInfo = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.gbxQuick.SuspendLayout();
+            this.gbxManual.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -94,150 +95,134 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Product Name: ";
             // 
-            // groupBox1
+            // gbxQuick
             // 
-            this.groupBox1.Controls.Add(this.button11);
-            this.groupBox1.Controls.Add(this.button10);
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Enabled = false;
-            this.groupBox1.Location = new System.Drawing.Point(12, 81);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(242, 196);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Quick Stock Actions";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.gbxQuick.Controls.Add(this.btnSubNum);
+            this.gbxQuick.Controls.Add(this.btnAddNum);
+            this.gbxQuick.Controls.Add(this.btnDisableThreshold);
+            this.gbxQuick.Controls.Add(this.btnEnableThreshold);
+            this.gbxQuick.Controls.Add(this.btnSub5);
+            this.gbxQuick.Controls.Add(this.btnAdd5);
+            this.gbxQuick.Controls.Add(this.btnSub1);
+            this.gbxQuick.Controls.Add(this.btnAdd1);
+            this.gbxQuick.Enabled = false;
+            this.gbxQuick.Location = new System.Drawing.Point(12, 81);
+            this.gbxQuick.Name = "gbxQuick";
+            this.gbxQuick.Size = new System.Drawing.Size(242, 196);
+            this.gbxQuick.TabIndex = 4;
+            this.gbxQuick.TabStop = false;
+            this.gbxQuick.Text = "Quick Stock Actions";
+            this.gbxQuick.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button2
+            // btnSubNum
             // 
-            this.button2.Location = new System.Drawing.Point(123, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Subtract 1";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnSubNum.Location = new System.Drawing.Point(124, 97);
+            this.btnSubNum.Name = "btnSubNum";
+            this.btnSubNum.Size = new System.Drawing.Size(93, 23);
+            this.btnSubNum.TabIndex = 8;
+            this.btnSubNum.Text = "Subtract #";
+            this.btnSubNum.UseVisualStyleBackColor = true;
+            this.btnSubNum.Click += new System.EventHandler(this.btnSubNum_Click);
             // 
-            // button1
+            // btnAddNum
             // 
-            this.button1.Location = new System.Drawing.Point(23, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add 1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddNum.Location = new System.Drawing.Point(24, 97);
+            this.btnAddNum.Name = "btnAddNum";
+            this.btnAddNum.Size = new System.Drawing.Size(93, 23);
+            this.btnAddNum.TabIndex = 7;
+            this.btnAddNum.Text = "Add #";
+            this.btnAddNum.UseVisualStyleBackColor = true;
+            this.btnAddNum.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button3
+            // btnDisableThreshold
             // 
-            this.button3.Location = new System.Drawing.Point(123, 48);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Subtract 5";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDisableThreshold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDisableThreshold.Location = new System.Drawing.Point(124, 142);
+            this.btnDisableThreshold.Name = "btnDisableThreshold";
+            this.btnDisableThreshold.Size = new System.Drawing.Size(94, 41);
+            this.btnDisableThreshold.TabIndex = 6;
+            this.btnDisableThreshold.Text = "Disable Threshold";
+            this.btnDisableThreshold.UseVisualStyleBackColor = true;
+            this.btnDisableThreshold.Click += new System.EventHandler(this.btnDisableThreshold_Click);
             // 
-            // button4
+            // btnEnableThreshold
             // 
-            this.button4.Location = new System.Drawing.Point(23, 48);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Add 5";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnEnableThreshold.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnEnableThreshold.Location = new System.Drawing.Point(24, 142);
+            this.btnEnableThreshold.Name = "btnEnableThreshold";
+            this.btnEnableThreshold.Size = new System.Drawing.Size(94, 41);
+            this.btnEnableThreshold.TabIndex = 5;
+            this.btnEnableThreshold.Text = "Enable Threshold";
+            this.btnEnableThreshold.UseVisualStyleBackColor = true;
+            this.btnEnableThreshold.Click += new System.EventHandler(this.btnEnableThreshold_Click);
             // 
-            // button5
+            // btnSub5
             // 
-            this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(13, 160);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(216, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Clear Stock to 0";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnSub5.Location = new System.Drawing.Point(123, 48);
+            this.btnSub5.Name = "btnSub5";
+            this.btnSub5.Size = new System.Drawing.Size(94, 23);
+            this.btnSub5.TabIndex = 3;
+            this.btnSub5.Text = "Subtract 5";
+            this.btnSub5.UseVisualStyleBackColor = true;
+            this.btnSub5.Click += new System.EventHandler(this.btnSub5_Click);
             // 
-            // button6
+            // btnAdd5
             // 
-            this.button6.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button6.Location = new System.Drawing.Point(24, 142);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(94, 41);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Enable Threshold";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnAdd5.Location = new System.Drawing.Point(23, 48);
+            this.btnAdd5.Name = "btnAdd5";
+            this.btnAdd5.Size = new System.Drawing.Size(94, 23);
+            this.btnAdd5.TabIndex = 2;
+            this.btnAdd5.Text = "Add 5";
+            this.btnAdd5.UseVisualStyleBackColor = true;
+            this.btnAdd5.Click += new System.EventHandler(this.btnAdd5_Click);
             // 
-            // button7
+            // btnSub1
             // 
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button7.Location = new System.Drawing.Point(124, 142);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(94, 41);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Disable Threshold";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnSub1.Location = new System.Drawing.Point(123, 19);
+            this.btnSub1.Name = "btnSub1";
+            this.btnSub1.Size = new System.Drawing.Size(94, 23);
+            this.btnSub1.TabIndex = 1;
+            this.btnSub1.Text = "Subtract 1";
+            this.btnSub1.UseVisualStyleBackColor = true;
+            this.btnSub1.Click += new System.EventHandler(this.button2_Click);
             // 
-            // groupBox2
+            // btnAdd1
             // 
-            this.groupBox2.Controls.Add(this.button9);
-            this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(260, 81);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(242, 196);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Manual Stock Actions";
+            this.btnAdd1.Location = new System.Drawing.Point(23, 19);
+            this.btnAdd1.Name = "btnAdd1";
+            this.btnAdd1.Size = new System.Drawing.Size(94, 23);
+            this.btnAdd1.TabIndex = 0;
+            this.btnAdd1.Text = "Add 1";
+            this.btnAdd1.UseVisualStyleBackColor = true;
+            this.btnAdd1.Click += new System.EventHandler(this.btnAdd1_Click);
             // 
-            // label2
+            // btnClrStock
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Quantity of Stock:";
+            this.btnClrStock.ForeColor = System.Drawing.Color.Red;
+            this.btnClrStock.Location = new System.Drawing.Point(13, 160);
+            this.btnClrStock.Name = "btnClrStock";
+            this.btnClrStock.Size = new System.Drawing.Size(216, 23);
+            this.btnClrStock.TabIndex = 4;
+            this.btnClrStock.Text = "Clear Stock to 0";
+            this.btnClrStock.UseVisualStyleBackColor = true;
+            this.btnClrStock.Click += new System.EventHandler(this.btnClrStock_Click);
             // 
-            // textBox1
+            // gbxManual
             // 
-            this.textBox1.Location = new System.Drawing.Point(115, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(115, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Quantity Threshold:";
-            // 
-            // button8
-            // 
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button8.Location = new System.Drawing.Point(13, 52);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(216, 23);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Set Stock Manually";
-            this.button8.UseVisualStyleBackColor = true;
+            this.gbxManual.Controls.Add(this.button9);
+            this.gbxManual.Controls.Add(this.btnStockManual);
+            this.gbxManual.Controls.Add(this.txtThreshold);
+            this.gbxManual.Controls.Add(this.label4);
+            this.gbxManual.Controls.Add(this.btnClrStock);
+            this.gbxManual.Controls.Add(this.txtManualQty);
+            this.gbxManual.Controls.Add(this.label2);
+            this.gbxManual.Enabled = false;
+            this.gbxManual.Location = new System.Drawing.Point(260, 81);
+            this.gbxManual.Name = "gbxManual";
+            this.gbxManual.Size = new System.Drawing.Size(242, 196);
+            this.gbxManual.TabIndex = 5;
+            this.gbxManual.TabStop = false;
+            this.gbxManual.Text = "Manual Stock Actions";
             // 
             // button9
             // 
@@ -249,42 +234,79 @@
             this.button9.Text = "Set Threshold Manually";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnStockManual
             // 
-            this.button10.Location = new System.Drawing.Point(24, 97);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(93, 23);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "Add #";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnStockManual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnStockManual.Location = new System.Drawing.Point(13, 52);
+            this.btnStockManual.Name = "btnStockManual";
+            this.btnStockManual.Size = new System.Drawing.Size(216, 23);
+            this.btnStockManual.TabIndex = 4;
+            this.btnStockManual.Text = "Set Stock Manually";
+            this.btnStockManual.UseVisualStyleBackColor = true;
+            this.btnStockManual.Click += new System.EventHandler(this.btnStockManual_Click);
             // 
-            // button11
+            // txtThreshold
             // 
-            this.button11.Location = new System.Drawing.Point(124, 97);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(93, 23);
-            this.button11.TabIndex = 8;
-            this.button11.Text = "Subtract #";
-            this.button11.UseVisualStyleBackColor = true;
+            this.txtThreshold.Location = new System.Drawing.Point(115, 94);
+            this.txtThreshold.Name = "txtThreshold";
+            this.txtThreshold.Size = new System.Drawing.Size(121, 20);
+            this.txtThreshold.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Quantity Threshold:";
+            // 
+            // txtManualQty
+            // 
+            this.txtManualQty.Location = new System.Drawing.Point(115, 26);
+            this.txtManualQty.Name = "txtManualQty";
+            this.txtManualQty.Size = new System.Drawing.Size(121, 20);
+            this.txtManualQty.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Quantity of Stock:";
             // 
             // loadingInfo
             // 
             this.loadingInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadingInfo.Location = new System.Drawing.Point(12, 280);
             this.loadingInfo.Name = "loadingInfo";
-            this.loadingInfo.Size = new System.Drawing.Size(490, 34);
+            this.loadingInfo.Size = new System.Drawing.Size(357, 34);
             this.loadingInfo.TabIndex = 6;
             this.loadingInfo.Text = "Loading Product Data....";
-            this.loadingInfo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.loadingInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(429, 288);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // InventoryMgmt_EditView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(516, 323);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.loadingInfo);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbxManual);
+            this.Controls.Add(this.gbxQuick);
             this.Controls.Add(this.lblProductName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblProductID);
@@ -295,9 +317,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Edit Product Inventory Data";
             this.Load += new System.EventHandler(this.InventoryMgmt_EditView_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbxQuick.ResumeLayout(false);
+            this.gbxManual.ResumeLayout(false);
+            this.gbxManual.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,23 +331,24 @@
         private System.Windows.Forms.Label lblProductID;
         private System.Windows.Forms.Label lblProductName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbxQuick;
+        private System.Windows.Forms.Button btnSub1;
+        private System.Windows.Forms.Button btnAdd1;
+        private System.Windows.Forms.Button btnDisableThreshold;
+        private System.Windows.Forms.Button btnEnableThreshold;
+        private System.Windows.Forms.Button btnClrStock;
+        private System.Windows.Forms.Button btnSub5;
+        private System.Windows.Forms.Button btnAdd5;
+        private System.Windows.Forms.Button btnSubNum;
+        private System.Windows.Forms.Button btnAddNum;
+        private System.Windows.Forms.GroupBox gbxManual;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnStockManual;
+        private System.Windows.Forms.TextBox txtThreshold;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtManualQty;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label loadingInfo;
+        private System.Windows.Forms.Button btnClose;
     }
 }
