@@ -36,12 +36,16 @@
             this.EditSaleLink = new System.Windows.Forms.LinkLabel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.panel2.Controls.Add(this.linkLabel2);
+            this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.SalesPredictionLink);
             this.panel2.Controls.Add(this.AddSaleLink);
             this.panel2.Controls.Add(this.SearchSaleLink);
@@ -59,7 +63,7 @@
             this.SalesPredictionLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SalesPredictionLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalesPredictionLink.LinkColor = System.Drawing.Color.White;
-            this.SalesPredictionLink.Location = new System.Drawing.Point(32, 370);
+            this.SalesPredictionLink.Location = new System.Drawing.Point(32, 328);
             this.SalesPredictionLink.Name = "SalesPredictionLink";
             this.SalesPredictionLink.Size = new System.Drawing.Size(111, 20);
             this.SalesPredictionLink.TabIndex = 10;
@@ -87,7 +91,7 @@
             this.SearchSaleLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SearchSaleLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchSaleLink.LinkColor = System.Drawing.Color.White;
-            this.SearchSaleLink.Location = new System.Drawing.Point(32, 313);
+            this.SearchSaleLink.Location = new System.Drawing.Point(32, 277);
             this.SearchSaleLink.Name = "SearchSaleLink";
             this.SearchSaleLink.Size = new System.Drawing.Size(83, 20);
             this.SearchSaleLink.TabIndex = 8;
@@ -101,7 +105,7 @@
             this.SaleInfoLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SaleInfoLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaleInfoLink.LinkColor = System.Drawing.Color.White;
-            this.SaleInfoLink.Location = new System.Drawing.Point(31, 192);
+            this.SaleInfoLink.Location = new System.Drawing.Point(32, 172);
             this.SaleInfoLink.Name = "SaleInfoLink";
             this.SaleInfoLink.Size = new System.Drawing.Size(112, 20);
             this.SaleInfoLink.TabIndex = 7;
@@ -115,7 +119,7 @@
             this.EditSaleLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditSaleLink.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditSaleLink.LinkColor = System.Drawing.Color.White;
-            this.EditSaleLink.Location = new System.Drawing.Point(32, 256);
+            this.EditSaleLink.Location = new System.Drawing.Point(32, 223);
             this.EditSaleLink.Name = "EditSaleLink";
             this.EditSaleLink.Size = new System.Drawing.Size(65, 20);
             this.EditSaleLink.TabIndex = 6;
@@ -143,6 +147,34 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(711, 115);
             this.panel4.TabIndex = 7;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(32, 374);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(88, 40);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Inventory\r\nManagement";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel2.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
+            this.linkLabel2.Location = new System.Drawing.Point(33, 440);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(73, 20);
+            this.linkLabel2.TabIndex = 12;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Low Stock";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // Main
             // 
@@ -173,5 +205,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.LinkLabel SalesPredictionLink;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

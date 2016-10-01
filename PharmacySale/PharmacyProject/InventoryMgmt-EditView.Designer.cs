@@ -43,7 +43,7 @@
             this.btnAdd1 = new System.Windows.Forms.Button();
             this.btnClrStock = new System.Windows.Forms.Button();
             this.gbxManual = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnSetThresholdManual = new System.Windows.Forms.Button();
             this.btnStockManual = new System.Windows.Forms.Button();
             this.txtThreshold = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -209,7 +209,7 @@
             // 
             // gbxManual
             // 
-            this.gbxManual.Controls.Add(this.button9);
+            this.gbxManual.Controls.Add(this.btnSetThresholdManual);
             this.gbxManual.Controls.Add(this.btnStockManual);
             this.gbxManual.Controls.Add(this.txtThreshold);
             this.gbxManual.Controls.Add(this.label4);
@@ -224,15 +224,16 @@
             this.gbxManual.TabStop = false;
             this.gbxManual.Text = "Manual Stock Actions";
             // 
-            // button9
+            // btnSetThresholdManual
             // 
-            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button9.Location = new System.Drawing.Point(13, 120);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(216, 23);
-            this.button9.TabIndex = 5;
-            this.button9.Text = "Set Threshold Manually";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnSetThresholdManual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnSetThresholdManual.Location = new System.Drawing.Point(13, 120);
+            this.btnSetThresholdManual.Name = "btnSetThresholdManual";
+            this.btnSetThresholdManual.Size = new System.Drawing.Size(216, 23);
+            this.btnSetThresholdManual.TabIndex = 5;
+            this.btnSetThresholdManual.Text = "Set Threshold Manually";
+            this.btnSetThresholdManual.UseVisualStyleBackColor = true;
+            this.btnSetThresholdManual.Click += new System.EventHandler(this.button9_Click);
             // 
             // btnStockManual
             // 
@@ -342,7 +343,7 @@
         private System.Windows.Forms.Button btnSubNum;
         private System.Windows.Forms.Button btnAddNum;
         private System.Windows.Forms.GroupBox gbxManual;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnSetThresholdManual;
         private System.Windows.Forms.Button btnStockManual;
         private System.Windows.Forms.TextBox txtThreshold;
         private System.Windows.Forms.Label label4;

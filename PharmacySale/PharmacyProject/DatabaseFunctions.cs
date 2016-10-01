@@ -188,6 +188,42 @@ namespace PharmacyProject
             }
         }
 
+        public bool SetQuantityThresholdToProduct(int productID, int qty)
+        {
+            int stockToSet = qty;
+            if ((stockToSet) < 0)
+            {
+                //ensures negative cant happen
+                return false;
+            }
+            else
+            {
+                if (conDatabase.State != System.Data.ConnectionState.Open)
+                {
+                    conDatabase.Open();
+                }
+                MySqlCommand command = CommandFromSQLStatement("UPDATE productstock SET stock_threshold = " + stockToSet + " WHERE product_id = " + productID);
+                try
+                {
+                    int rowsAffected = command.ExecuteNonQuery();
+                    if (rowsAffected != 1)
+                    {
+                        //unexpected result?
+                        conDatabase.Close();
+                        return false;
+                    }
+                }
+                catch (Exception e)
+                {
+                    conDatabase.Close();
+                    MessageBox.Show(e.Message);
+                    return false;
+                }
+                conDatabase.Close();
+                return true;
+            }
+        }
+
         public bool AddQuantityToProduct(int productID, int qty) {
             if (qty < 1) { return true; }
             if (conDatabase.State != System.Data.ConnectionState.Open)

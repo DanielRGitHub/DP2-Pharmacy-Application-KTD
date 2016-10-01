@@ -215,5 +215,19 @@ namespace PharmacyProject
                 }
             }
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            DialogResult msgboxResult = MessageBox.Show("Are you sure you want to set this products quantity threshold to " + Convert.ToInt32(txtThreshold.Text) + "?", "Confirm Manual Stock Update - Product ID:" + _productId, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msgboxResult == DialogResult.Yes)
+            {
+                bool result = _dbfuncs.SetQuantityThresholdToProduct(_productId, Convert.ToInt32(txtThreshold.Text));
+                if (!result)
+                {
+                    MessageBox.Show("An unknown error has occured");
+                }
+            }
+            
+        }
     }
 }

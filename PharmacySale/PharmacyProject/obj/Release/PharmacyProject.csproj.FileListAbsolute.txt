@@ -77,3 +77,23 @@ C:\Users\kusha.LAPTOP-GNS0PQVP\DP2-Pharmacy-Application-KTDB\PharmacySale\Pharma
 C:\Users\kusha.LAPTOP-GNS0PQVP\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesPrediction.resources
 C:\Users\kusha.LAPTOP-GNS0PQVP\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SearchSale.resources
 C:\Users\kusha.LAPTOP-GNS0PQVP\DP2-Pharmacy-Application-KTDB\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csproj.GenerateResource.Cache
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe.config
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.exe
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.pdb
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.exe
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\bin\Release\PharmacyProject.pdb
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\bin\Release\MySql.Data.dll
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\bin\Release\MySql.Data.xml
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csprojResolveAssemblyReference.cache
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.AddSale.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.EditSale.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.InventoryLowStock.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.InventoryMgmt_AddSubtractQtyDialog.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.InventoryMgmt_EditView.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.InventoryMgmt.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.Main.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.Properties.Resources.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesInfo.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SalesPrediction.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.SearchSale.resources
+F:\Users\Blake Howe\Dropbox\Projects\DP2-Pharmacy-Application-KTD\PharmacySale\PharmacyProject\obj\Release\PharmacyProject.csproj.GenerateResource.Cache
