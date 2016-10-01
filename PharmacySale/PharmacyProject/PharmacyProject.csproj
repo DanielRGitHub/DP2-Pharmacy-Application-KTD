@@ -56,11 +56,36 @@
     <Compile Include="AddSale.Designer.cs">
       <DependentUpon>AddSale.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseFunctions.cs" />
     <Compile Include="EditSale.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditSale.Designer.cs">
       <DependentUpon>EditSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryLowStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryLowStock.Designer.cs">
+      <DependentUpon>InventoryLowStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMgmt-AddSubtractQtyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryMgmt-AddSubtractQtyDialog.Designer.cs">
+      <DependentUpon>InventoryMgmt-AddSubtractQtyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMgmt-EditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryMgmt-EditView.Designer.cs">
+      <DependentUpon>InventoryMgmt-EditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryMgmt.Designer.cs">
+      <DependentUpon>InventoryMgmt.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -93,6 +118,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditSale.resx">
       <DependentUpon>EditSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryLowStock.resx">
+      <DependentUpon>InventoryLowStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryMgmt-AddSubtractQtyDialog.resx">
+      <DependentUpon>InventoryMgmt-AddSubtractQtyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryMgmt-EditView.resx">
+      <DependentUpon>InventoryMgmt-EditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryMgmt.resx">
+      <DependentUpon>InventoryMgmt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

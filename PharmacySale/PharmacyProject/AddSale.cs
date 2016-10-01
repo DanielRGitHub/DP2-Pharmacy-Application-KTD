@@ -117,5 +117,10 @@ namespace PharmacyProject
             catch (Exception error)
             { MessageBox.Show(error.Message); }
         }
+
+        private void AddSale_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

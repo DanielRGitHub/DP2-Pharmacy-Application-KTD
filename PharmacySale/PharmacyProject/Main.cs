@@ -44,9 +44,25 @@ namespace PharmacyProject
             obj.Show();
         }
 
+
+        private void LoadInvMgmt() {
+            InventoryMgmt obj = new InventoryMgmt();
+
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
         private void LoadSalesPrediction()
         {
             SalesPrediction obj = new SalesPrediction();
+
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
+        private void LoadLowStock() {
+            InventoryLowStock obj = new InventoryLowStock();
+
             obj.MdiParent = this;
             obj.Show();
         }
@@ -90,9 +106,20 @@ namespace PharmacyProject
             LoadSearchSale();
         }
 
+
+        private void InvMgmtLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoadInvMgmt();
+        }
+
         private void SalesPredictionLink_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LoadSalesPrediction();
+        }
+
+        private void InvLowStockLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoadLowStock();
         }
     }
 }
